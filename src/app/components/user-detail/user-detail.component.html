@@ -1,0 +1,11 @@
+<div class="container mt-4">
+  <h3>User Details</h3>
+  <table class="table table-bordered">
+    @for (key of user | keyvalue; track key.key) {
+  <tr>
+    <th>{{ key.key }}</th>
+    <td>{{ key.value }}</td>
+  </tr>
+}
+  </table>
+</div>
